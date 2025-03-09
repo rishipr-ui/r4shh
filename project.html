@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Mono', monospace;
+            padding-bottom: 2rem;
+            background-image: url('back2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .projects-container {
+            max-width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+            color: #333;
+        }
+
+        .card {
+            background-color: rgba(220, 182, 135, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 30%;
+            height: 150px;
+            object-fit: cover;
+            transition: opacity 0.2s ease-in;
+        }
+
+        .card:hover img {
+            opacity: 1;
+        }
+
+        .cardtext {
+            flex: 1;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cardtext h1 {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .cardtext p {
+            font-size: clamp(0.8rem, 1.5vw, 1rem);
+            line-height: 1.4;
+            color: #555;
+            margin: 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: rgba(211, 190, 138, 0.879);
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: 'Space Mono', monospace;
+            transition: transform 0.1s ease-in-out;
+            font-size: 0.9rem;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+            
+            .card img {
+                width: 100%;
+                height: 200px;
+            }
+            
+            .cardtext {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-container {
+                width: 95%;
+                padding: 0.5rem;
+            }
+            
+            .cardtext h1 {
+                font-size: clamp(0.9rem, 4vw, 1.2rem);
+            }
+            
+            .cardtext p {
+                font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+           <a href="https://github.com/rishipr-ui" target="_blank"><button class="button"><img src="gitlogo (2).svg" alt="Logo" class="logo"></button></a>
+        </div>
+        <div class="nav-center">
+            <h2>Rishi Preetham</h2>
+        </div>
+        <div class="nav-right">
+            <a href="https://www.linkedin.com/in/maddela-rishi-preetham-b91476320/" target="_blank"><button class="button"><img src="inlogo.svg" alt="LinkedIn"></button></a>
+            <a href="https://discordapp.com/users/1177567477459329074" target="_blank"><button class="button"><img src="dislogo.svg" alt="Discord"></button></a>
+            <a href="https://www.instagram.com/rishimaddela_/" target="_blank"><button class="button"><img src="inslogo.svg" alt="Instagram"></button></a>
+        </div>
+    </nav>
+
+    <div class="projects-container">
+        <h1 class="section-heading">Non - Technical Projects</h1>
+        
+        <div class="card">
+            <img src="beigeew.jpg" alt="HC-05 Bluetooth Light">      
+            <div class="cardtext">
+                <h1>HC-05 Bluetooth Light</h1>
+                <p>
+                    Controlling a led light with
+                    Bluetooth module and phone app.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="ard..webp" alt="Arduino Controlled Fan">      
+            <div class="cardtext">
+                <h1>Arduino Controlled Fan</h1>
+                <p>
+                    Controlling a fan/servo motor
+                    using an arduino uno model.
+                </p>
+            </div>
+        </div>
+
+        <h1 class="section-heading">Technical Projects</h1>
+        
+        <div class="card">
+            <img src="bday.png" alt="Birthday Website">      
+            <div class="cardtext">
+                <h1>Birthday Website (Personal)</h1>
+                <p>
+                    A static birthday website
+                    made with html, css and a little js
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="spot.png" alt="Spotify Recreation">      
+            <div class="cardtext">
+                <h1>Spotify Recreation (Trial)</h1>
+                <p>
+                    Tried to recreate Spotify's UI
+                    With html css and Javascript.
+                </p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="port.jpeg" alt="Portfolio Website">      
+            <div class="cardtext">
+                <h1>This Portfolio Website</h1>
+                <p>
+                    Made a clean Portfolio Website
+                    Used only html and css.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>

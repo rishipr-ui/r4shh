@@ -1,0 +1,115 @@
+body {
+    background-image: url('back2.jpg');
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.font {
+    font-family: 'Space Mono', monospace;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(211, 190, 138, 0.879);
+    width: 80%;
+    max-width: 1200px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.117) 0px 5px 15px, rgba(233, 200, 135, 0.138) 5px 10px 15px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-center h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.nav-right {
+    gap: 20px;
+}
+
+.button {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.pp {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.for {
+    margin: 10px;
+    background-color: rgba(211, 190, 138, 0.879);
+    border: none;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.for:hover {
+    transform: translateY(-3px);
+}
+
+.hg {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    margin: 20px 0;
+}
+
+.xx {
+    margin-top: 20px;
+    background-color: rgba(242, 229, 210, 0.591);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}

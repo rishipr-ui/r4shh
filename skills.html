@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        
+            body {
+            font-family: 'Space Mono', monospace;
+            padding-bottom: 2rem;
+            background-image: url('back2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .skill{
+            background-color: rgba(220, 182, 135, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: rgba(211, 190, 138, 0.879);
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: 'Space Mono', monospace;
+            transition: transform 0.1s ease-in-out;
+            font-size: 0.9rem;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+        }
+        
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+            <div class="nav-left">
+            <a href="https://github.com/rishipr-ui" target="_blank"><button class="button"><img src="gitlogo (2).svg" alt="Logo" class="logo"></button></a>
+            </div>
+            <div class="nav-center">
+                <h2>Rishi Preetham</h2>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.linkedin.com/in/maddela-rishi-preetham-b91476320/" target="_blank"><button class="button"><img src="inlogo.svg"></button></a>
+                <a href="https://discordapp.com/users/1177567477459329074" target="_blank"><button class="button"><img src="dislogo.svg"></button></a>
+                <a href="https://www.instagram.com/rishimaddela_/" target="_blank"><button class="button"><img src="inslogo.svg"></button></a>
+            </div>
+        </nav>
+    <h1>Skills Learnt</h1>
+    <center><h2>Frontend</h2></center>
+    <div class="skills-container">
+        <div class="skill">
+            <img src="html.png" alt="HTML" height="200px" width="200px">
+            <div style="display:block">
+            <h2>HTML</h2>
+            <p>HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+        </div>
+        </div>
+        <div class="skill">
+            <img src="css.png" alt="CSS" height="200px" width="200px">
+            <div style="display:block">
+            <h2>CSS</h2>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        </div>
+        </div>
+        <div class="skill">
+            <img src ="js.png" alt="JavaScript" height="200px" width="200px">
+            <div style="display:block">
+            <h2>JavaScript</h2>
+            <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+        </div>
+        </div>
+        <center><h2>Backend</h2></center>
+       
+        <div class="skill">
+            <img src ="python.jpg" alt="Python" height="200px" width="200px">
+            <div style="display:block; font-family: 'Space Mono',monospace;">
+            <h2>Python</h2>
+            <p>Python is
+            an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.</p>     
+</div></div>
+<div style="text-align: center; margin-top: 2rem;">
+    <a href="index.html" class="back-button">Back to Home</a>
+</div>
+    
+</body>
+</html>
